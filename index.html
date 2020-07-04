@@ -1,12 +1,68 @@
 ---
 layout: default
-title: Hank Quinlan, Horrible Cop
+title: Marko Vasic
 ---
+<a name="home"></a>
+<div id="container">
+  <div id="header"><font face="Arial" size="6">Marko Vasic</font></div>
+  <div id="haut">
+    <ul class="menuhaut">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#pub">Publications</a></li>
+    </ul>
+  </div>
 
-		<div class="blurb">
-			<h1>Hi there, I'm Hank Quinlan!</h1>
-			<p>I'm best known as the horrible cop from <em>A Touch of Evil</em>. Don't trust me. <a href="/about">Read more about my life...</a></p>
-		</div>
+  <div id="centre">
+    <table border="0">
+      <tbody>
+	<tr>
+	  <td style="text-align: left; width: 220px; height: 285px;"><img src="resources/IMG_1577.JPG" width="210" border="0" alt="Marko Vasic"/></td>
+	  <td style="width: 600px; height: 285px;">
+	    <h3>
+              PhD Candidate, Department of Electrical and Computer Engineering <br />
+	      The University of Texas at Austin
+	    </h3>
+	    <h3>
+              Office: Engineering Education and Research Center (EER) <br />
+	      Email: <b>vasic AT utexas.edu</b></h3>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    
+    <h1>About Me</h1>
+    <p>
+      I am a PhD candidate in Electrical and Computer Engineering
+      department advised by
+      Professor <a href="https://users.ece.utexas.edu/~khurshid/">Sarfraz
+        Khurshid</a>.
+    </p>
+    
+    <!-- <h1><a name="pub"></a>Publications</h1> -->
+    <!-- <ul> -->
+    <!--   <li><b>Marko Vasic</b>, Aditya Kanade, Petros Maniatis, David Bieber, Rishabh Singh<br /> -->
+    <!--     Neural program repair by jointly learning to localize and repair [<b><a href="https://arxiv.org/pdf/1904.01720.pdf" target="_blank">PDF</a></b>] <br /> -->
+    <!--     <shrtconf>ICLR'19</shrtconf>. <i>International Conference on Learning Representations</i>, 2019. -->
+    <!--   </li> -->
+    <!-- </ul> -->
+
+    <ul>
+      {% for publication in site.publications %}
+        <li>
+          {{ publication.authors }}<br />
+          {{ publication.title }}<br />
+          {{ publication.venue }}<br />
+          ({{ publication.venue_short }}), {{ publication.year }}.<br />
+          {% unless publication.pdf == blank %}
+            [<b><a href="{{ publication.pdf }}" target="_blank">PDF</a></b>]
+          {% endunless %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
 <!-- <!DOCTYPE html> -->
 <!-- <html> -->
 <!--   <head> -->
@@ -39,7 +95,7 @@ title: Hank Quinlan, Horrible Cop
 <!-- 	      </td> -->
 <!-- 	    </tr> -->
 <!-- 	  </tbody> -->
-<!-- 	</table>		 -->
+<!-- 	</table> -->
 				
 <!-- 	<h1>About Me</h1> -->
 <!-- 	<p> -->
@@ -55,8 +111,21 @@ title: Hank Quinlan, Horrible Cop
 <!-- 	    Neural program repair by jointly learning to localize and repair [<b><a href="https://arxiv.org/pdf/1904.01720.pdf" target="_blank">PDF</a></b>] <br /> -->
 <!-- 	    <shrtconf>ICLR'19</shrtconf>. <i>International Conference on Learning Representations</i>, 2019. -->
 <!-- 	  </li> -->
-<!--         </ul>           -->
+<!--         </ul> -->
+<!--         {% for publication in site.publications %} -->
+<!--           <h2>{{ publication.name }} - {{ publication.position }}</h2> -->
+<!--           <p>{{ publication.content | markdownify }}</p> -->
+<!--         {% endfor %} -->
 <!--       </div> -->
 <!--     </div> -->
 <!--   </body> -->
 <!-- </html> -->
+
+<!-- --- -->
+<!-- layout: default -->
+<!-- title: Hank Quinlan, Horrible Cop -->
+<!-- --- -->
+<!-- <div class="blurb"> -->
+<!-- 	<h1>Hi there, I'm Hank Quinlan!</h1> -->
+<!-- 	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em>. Don't trust me. <a href="/about">Read more about my life...</a></p> -->
+<!-- </div> -->
