@@ -47,13 +47,14 @@ title: Marko Vasic
     <!-- </ul> -->
 
     <ul>
-      {% for publication in site.publications %}
+      {% assign ordered_publications = (site.publications | sort:"year") | reverse %}
+      {% for publication in ordered_publications %}
         <li>
           {{ publication.authors }}<br />
           {{ publication.title }}<br />
           {{ publication.venue }}<br />
           ({{ publication.venue_short }}), {{ publication.year }}.<br />
-          {% unless publication.pdf == blank %}
+          {% unless publication.pdf == nil or publication.pdf == empty %}
             [<b><a href="{{ publication.pdf }}" target="_blank">PDF</a></b>]
           {% endunless %}
         </li>
