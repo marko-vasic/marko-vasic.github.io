@@ -5,26 +5,25 @@ title: Marko Vasic
 <a name="home"></a>
 <div id="container">
   <div id="header"><font face="Arial" size="6">Marko Vasic</font></div>
-  <div id="haut">
-    <ul class="menuhaut">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#pub">Publications</a></li>
-    </ul>
-  </div>
+  <!-- <div id="haut"> -->
+  <!--   <ul class="menuhaut"> -->
+  <!--     <li><a href="#home">Home</a></li> -->
+  <!--     <li><a href="#pub">Publications</a></li> -->
+  <!--   </ul> -->
+  <!-- </div> -->
 
   <div id="centre">
     <table border="0">
       <tbody>
 	<tr>
-	  <td style="text-align: left; width: 220px; height: 285px;"><img src="resources/IMG_1577.JPG" width="210" border="0" alt="Marko Vasic"/></td>
+	  <td style="text-align: left; width: 220px; height: 285px;"><img src="resources/PND_4433_resize_cropped.JPG" width="210" border="0" alt="Marko Vasic"/></td>
 	  <td style="width: 600px; height: 285px;">
-	    <h3>
-              PhD Candidate, Department of Electrical and Computer Engineering <br />
-	      The University of Texas at Austin
-	    </h3>
-	    <h3>
-              Office: Engineering Education and Research Center (EER) <br />
-	      Email: <b>vasic AT utexas.edu</b></h3>
+	    <div>
+              <b>PhD Candidate</b> <br />
+              Department of Electrical and Computer Engineering <br />
+	      The University of Texas at Austin <br />
+	      <b>Email</b>: vasic AT utexas.edu
+            </div>
 	  </td>
 	</tr>
       </tbody>
@@ -32,20 +31,14 @@ title: Marko Vasic
     
     <h1>About Me</h1>
     <p>
-      I am a PhD candidate in Electrical and Computer Engineering
-      department advised by
-      Professor <a href="https://users.ece.utexas.edu/~khurshid/">Sarfraz
-        Khurshid</a>.
+      I am a PhD candidate in Electrical and Computer Engineering department advised by Professor <a href="https://users.ece.utexas.edu/~khurshid/">Sarfraz Khurshid</a>.
+      My research lays at the interconnection of artificial intelligence (AI), molecular programming and software engineering.
+      I am excited about and work on development of AI techniques that can help improve software development process;
+      I also work on developing efficient abstractions and programming paradigms for molecular programming,
+      where our recent work explores usage of deep learning for molecular programming.
     </p>
-    
-    <!-- <h1><a name="pub"></a>Publications</h1> -->
-    <!-- <ul> -->
-    <!--   <li><b>Marko Vasic</b>, Aditya Kanade, Petros Maniatis, David Bieber, Rishabh Singh<br /> -->
-    <!--     Neural program repair by jointly learning to localize and repair [<b><a href="https://arxiv.org/pdf/1904.01720.pdf" target="_blank">PDF</a></b>] <br /> -->
-    <!--     <shrtconf>ICLR'19</shrtconf>. <i>International Conference on Learning Representations</i>, 2019. -->
-    <!--   </li> -->
-    <!-- </ul> -->
 
+    <h1><a name="pub"></a>Publications</h1>
     <ul>
       {% assign ordered_publications = (site.publications | sort:"year") | reverse %}
       {% for publication in ordered_publications %}
