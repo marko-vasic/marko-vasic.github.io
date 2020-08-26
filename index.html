@@ -40,7 +40,7 @@ title: Marko Vasic
 
     <h1><a name="pub"></a>Publications</h1>
     <ul>
-      {% assign ordered_publications = (site.publications | sort:"year") | reverse %}
+      {% assign ordered_publications = (site.publications | sort:"id") | reverse %}
       {% for publication in ordered_publications %}
         <li>
           {{ publication.authors }}<br />
@@ -49,6 +49,9 @@ title: Marko Vasic
           ({{ publication.venue_short }}), {{ publication.year }}.<br />
           {% unless publication.pdf == nil or publication.pdf == empty %}
             [<b><a href="{{ publication.pdf }}" target="_blank">PDF</a></b>]
+          {% endunless %}
+          {% unless publication.video == nil or publication.video == empty %}
+            [<b><a href="{{ publication.video }}" target="_blank">Video</a></b>]
           {% endunless %}
         </li>
       {% endfor %}

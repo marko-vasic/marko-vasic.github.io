@@ -1,8 +1,9 @@
 ---
+id: "3"
 authors: "<b>Marko Vasic</b>, David Soloveichik, Sarfraz Khurshid"
-title: "CRNs Exposed: Systematic Exploration of Chemical Reaction Networks"
+title: "CRN++: Molecular Programming Language"
 venue: "<i>International Conference on DNA Computing and Molecular Programming</i>"
 venue_short: "DNA"
-year: "2020 (to appear)"
-pdf: "https://arxiv.org/pdf/1912.06197.pdf"
+year: "2018"
+pdf: "https://arxiv.org/pdf/1809.07430.pdf"
 ---

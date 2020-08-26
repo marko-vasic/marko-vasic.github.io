@@ -1,8 +1,9 @@
 ---
+id: "6"
 authors: "<b>Marko Vasic</b>, David Soloveichik, Sarfraz Khurshid"
 title: "CRN++: Molecular Programming Language"
-venue: "<i>International Conference on DNA Computing and Molecular Programming</i>"
-venue_short: "DNA"
-year: "2018"
+venue: "<i>Journal of Natural Computing</i>"
+venue_short: ""
+year: "2020"
 pdf: "https://arxiv.org/pdf/1809.07430.pdf"
 ---
