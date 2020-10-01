@@ -5,5 +5,5 @@ title: "File-Level vs. Module-Level Regression Test Selection for .NET"
 venue: "<i>Symposium on the Foundations of Software Engineering</i>"
 venue_short: "FSE"
 year: "2017"
-pdf: "https://par.nsf.gov/servlets/purl/10055459"
+arxiv: "https://par.nsf.gov/servlets/purl/10055459"
 ---

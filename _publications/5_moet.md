@@ -5,5 +5,5 @@ title: "MoËT: Interpretable and Verifiable Reinforcement Learning via Mixture o
 venue: "in preparation"
 venue_short: ""
 year: "2020"
-pdf: "https://arxiv.org/pdf/1906.06717"
+arxiv: "https://arxiv.org/pdf/1906.06717"
 ---

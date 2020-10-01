@@ -5,5 +5,5 @@ title: "CRN++: Molecular Programming Language"
 venue: "<i>Journal of Natural Computing</i>"
 venue_short: ""
 year: "2020"
-pdf: "https://arxiv.org/pdf/1809.07430.pdf"
+arxiv: "https://arxiv.org/pdf/1809.07430.pdf"
 ---

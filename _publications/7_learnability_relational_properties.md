@@ -5,5 +5,5 @@ title: "A Study of the Learnability of Relational Properties: Model Counting Mee
 venue: "<i>Conference on Programming Language Design and Implementation</i>"
 venue_short: "PLDI"
 year: "2020"
-pdf: ""
+arxiv: ""
 ---
