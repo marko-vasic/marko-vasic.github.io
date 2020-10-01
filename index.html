@@ -44,7 +44,7 @@ title: Marko Vasic
       {% for publication in ordered_publications %}
         <li>
           {{ publication.authors }}<br />
-          {{ publication.title }}<br />
+          <i>{{ publication.title }}</i><br />
           {{ publication.venue }}<br />
           ({{ publication.venue_short }}), {{ publication.year }}.<br />
           {% unless (publication.pdf == nil or publication.pdf == empty) %}
