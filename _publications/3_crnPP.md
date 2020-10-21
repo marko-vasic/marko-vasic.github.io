@@ -6,4 +6,5 @@ venue: "International Conference on DNA Computing and Molecular Programming"
 venue_short: "DNA"
 year: "2018"
 arxiv: "https://arxiv.org/pdf/1809.07430.pdf"
+github: "https://github.com/marko-vasic/crnPlusPlus"
 ---

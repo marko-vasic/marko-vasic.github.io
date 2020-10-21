@@ -71,6 +71,9 @@ title: Marko Vasic
           {% unless (publication.video == nil or publication.video == empty) %}
             [<b><a href="{{ publication.video }}" target="_blank">video</a></b>]
           {% endunless %}
+          {% unless (publication.github == nil or publication.github == empty) %}
+            [<b><a href="{{ publication.github }}" target="_blank">github</a></b>]
+          {% endunless %}
         </li>
       {% endfor %}
     </ul>
