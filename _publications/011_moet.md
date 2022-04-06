@@ -5,6 +5,6 @@ title: "MoËT: Mixture of Expert Trees and its Application to Verifiable Reinfor
 venue: "Neural Networks"
 venue_short: ""
 year: "2022"
-arxiv: "https://arxiv.org/pdf/1906.06717"
-publisher: "https://authors.elsevier.com/a/1erMW3BBjKk4Ln"
+pdf: "resources/moet.pdf"
+github: "https://github.com/marko-vasic/MoET"
 ---

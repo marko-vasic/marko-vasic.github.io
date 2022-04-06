@@ -59,9 +59,6 @@ title: Marko Vasić
           <i>{{ publication.title }}</i><br />
           {{ publication.venue }}<br />
           ({{ publication.venue_short }}), {{ publication.year }}.<br />
-          {% unless (publication.pdf == nil or publication.pdf == empty) %}
-            [<b><a href="{{ publication.pdf }}" target="_blank">PDF</a></b>]
-          {% endunless %}
           {% unless (publication.best_student_paper == nil or publication.best_student_paper == empty) %}
             [<b>Best Student Paper Award</b>]
           {% endunless %}
@@ -70,6 +67,9 @@ title: Marko Vasić
           {% endunless %}
           {% unless (publication.publisher == nil or publication.publisher == empty) %}
             [<b><a href="{{ publication.publisher }}" target="_blank">publisher</a></b>]
+          {% endunless %}
+          {% unless (publication.pdf == nil or publication.pdf == empty) %}
+            [<b><a href="{{ publication.pdf | relative url }}" target="_blank">pdf</a></b>]
           {% endunless %}
           {% unless (publication.video == nil or publication.video == empty) %}
             [<b><a href="{{ publication.video }}" target="_blank">video</a></b>]
