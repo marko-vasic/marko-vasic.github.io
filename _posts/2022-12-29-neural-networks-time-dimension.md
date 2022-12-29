@@ -14,9 +14,16 @@ Analogies between chemistry and other areas have been detected; furthermore bene
 
 In our [ICML'20 paper](https://arxiv.org/pdf/2003.13720.pdf) and follow up [PNAS'22 paper](https://www.pnas.org/doi/full/10.1073/pnas.2111552119) we present a scheme of translating neural to chemical networks (shown below).
 
-| ![scheme.png](scheme.png) |
-|:--:|
-| <b>Scheme for translating from neural to chemical networks.</b> (A) An example neural network. (B) Decomposition of neuron into the weighted sum and activation (ReLU). (C) Table showing how each component of a neural network translates to a chemical counterpart. [Figure from Vasic, Chalk, Luchsinger, Khurshid, Soloveichik, 2022 PNAS: [https://www.pnas.org/doi/full/10.1073/pnas.2111552119](https://www.pnas.org/doi/full/10.1073/pnas.2111552119)]|
+<!-- | ![scheme.svg](scheme.svg) | -->
+<!-- |:--:| -->
+<!-- | <b>Scheme for translating from neural to chemical networks.</b> (A) An example neural network. (B) Decomposition of neuron into the weighted sum and activation (ReLU). (C) Table showing how each component of a neural network translates to a chemical counterpart. [Figure from Vasic, Chalk, Luchsinger, Khurshid, Soloveichik, 2022 PNAS: [https://www.pnas.org/doi/full/10.1073/pnas.2111552119](https://www.pnas.org/doi/full/10.1073/pnas.2111552119)]| -->
+
+<figure>
+<center>
+<img src="scheme.svg" alt="Trulli" style="width:700px">
+<figcaption align="center"><b>Scheme for translating from neural to chemical networks.</b> (A) An example neural network. (B) Decomposition of neuron into the weighted sum and activation (ReLU). (C) Table showing how each component of a neural network translates to a chemical counterpart. [Figure from Vasic, Chalk, Luchsinger, Khurshid, Soloveichik, 2022 PNAS: <a href="https://www.pnas.org/doi/full/10.1073/pnas.2111552119">https://www.pnas.org/doi/full/10.1073/pnas.2111552119</a>]</figcaption>
+</center>
+</figure>
 
 Each component of a neural network: (a) fan-out, (b) weighted sum, (c) ReLU activation function, (d) bias terms; is shown, as well as its chemical counterpart.
 
@@ -24,19 +31,40 @@ The above scheme is particularly efficient for Binary-Weight neural networks, i.
 
 Since we presented the translation scheme from NNs to CRNs, let's see it in action! The next Figure illustrates results of translating neural network trained on MNIST to a chemical network.
 
-| ![mnist.png](mnist.png) |
-|:--:|
-| A neural network (with 10 output units) is trained on MNIST dataset. The network is translated to its chemical counterpart. (<b>left</b>) An example image from MNIST. (<b>right</b>) Simulation of chemical signals corresponding to output units of a neural network. Signals converge to same values that neural network outputs produce. Note that signal y4 is highest in the end, indicating that digit 4 is recognized. |
+<!-- | ![mnist.png](mnist.png) | -->
+<!-- |:--:| -->
+<!-- | A neural network (with 10 output units) is trained on MNIST dataset. The network is translated to its chemical counterpart. (<b>left</b>) An example image from MNIST. (<b>right</b>) Simulation of chemical signals corresponding to output units of a neural network. Signals converge to same values that neural network outputs produce. Note that signal y4 is highest in the end, indicating that digit 4 is recognized. | -->
+
+<figure>
+<center>
+<img src="mnist.png" alt="Trulli" style="width:700px">
+<figcaption align="center">A neural network (with 10 output units) is trained on MNIST dataset. The network is translated to its chemical counterpart. (<b>left</b>) An example image from MNIST. (<b>right</b>) Simulation of chemical signals corresponding to output units of a neural network. Signals converge to same values that neural network outputs produce. Note that signal y4 is highest in the end, indicating that digit 4 is recognized.</figcaption>
+</center>
+</figure>
 
 I also include a richer  example, with a larger variety of neural networks and its chemical counterparts, for your reference. Hope you enjoy looking at the graphs as much as I did (though spending hours/days preparing the following figure for PNAS I didn't enjoy too much :)
 
-| ![subjects.jpg](subjects.jpg) |
-|:--:|
-| Neural network architecture, input/output encoding, and CRN simulations for different datasets. Subfigures 1A and 1B show Iris neural network architecture and the kinetic trajectory of the corresponding CRN for an example input. The classification is "versicolor" because it is the highest (dual-rail) output value. Subfigure 2A shows an example MNIST input image and its input/output encoding. Each image from the MNIST dataset is unrolled into a vector, and the output label is represented as a 10D vector. Subfigures 2B and 2C show MNIST neural network architecture and the kinetic trajectory of the corresponding CRN for the input shown in 2A, which the network correctly classifies as a zero. Subfigures 3A and 3B show virus infection neural network architecture and the kinetic trajectory of the corresponding CRN for an example input. Subfigures 4A through 4D show a pattern formation (heart) neural network: 4A shows the image used to construct the dataset; 4B shows input and output encoding for a position (pixel) in the input image. An input is encoded using 2D coordinates: (x1) symmetric horizontal coordinates (starting in the image center) and (x2) vertical coordinates starting from the top left edge of the image. An output, which can be either black or white pixel, is encoded as a 2D vector as shown in the figure. Subfigure 4C shows neural network architecture. Subfigure 4D shows an image learned by the neural network, and the kinetic trajectories of the corresponding CRN for two different input values (positions) corresponding to white and black pixels. [Figure from Vasic, Chalk, Luchsinger, Khurshid, Soloveichik, 2022 PNAS: [https://www.pnas.org/doi/full/10.1073/pnas.2111552119](https://www.pnas.org/doi/full/10.1073/pnas.2111552119)] |
+<!-- | ![subjects.svg](subjects.svg) | -->
+<!-- |:--:| -->
+<!-- | Neural network architecture, input/output encoding, and CRN simulations for different datasets. Subfigures 1A and 1B show Iris neural network architecture and the kinetic trajectory of the corresponding CRN for an example input. The classification is "versicolor" because it is the highest (dual-rail) output value. Subfigure 2A shows an example MNIST input image and its input/output encoding. Each image from the MNIST dataset is unrolled into a vector, and the output label is represented as a 10D vector. Subfigures 2B and 2C show MNIST neural network architecture and the kinetic trajectory of the corresponding CRN for the input shown in 2A, which the network correctly classifies as a zero. Subfigures 3A and 3B show virus infection neural network architecture and the kinetic trajectory of the corresponding CRN for an example input. Subfigures 4A through 4D show a pattern formation (heart) neural network: 4A shows the image used to construct the dataset; 4B shows input and output encoding for a position (pixel) in the input image. An input is encoded using 2D coordinates: (x1) symmetric horizontal coordinates (starting in the image center) and (x2) vertical coordinates starting from the top left edge of the image. An output, which can be either black or white pixel, is encoded as a 2D vector as shown in the figure. Subfigure 4C shows neural network architecture. Subfigure 4D shows an image learned by the neural network, and the kinetic trajectories of the corresponding CRN for two different input values (positions) corresponding to white and black pixels. [Figure from Vasic, Chalk, Luchsinger, Khurshid, Soloveichik, 2022 PNAS: [https://www.pnas.org/doi/full/10.1073/pnas.2111552119](https://www.pnas.org/doi/full/10.1073/pnas.2111552119)] | -->
+
+<figure>
+<center>
+<img src="subjects.svg" alt="Trulli" style="width:700px">
+<figcaption align = "center">Neural network architecture, input/output encoding, and CRN simulations for different datasets. Subfigures 1A and 1B show Iris neural network architecture and the kinetic trajectory of the corresponding CRN for an example input. The classification is "versicolor" because it is the highest (dual-rail) output value. Subfigure 2A shows an example MNIST input image and its input/output encoding. Each image from the MNIST dataset is unrolled into a vector, and the output label is represented as a 10D vector. Subfigures 2B and 2C show MNIST neural network architecture and the kinetic trajectory of the corresponding CRN for the input shown in 2A, which the network correctly classifies as a zero. Subfigures 3A and 3B show virus infection neural network architecture and the kinetic trajectory of the corresponding CRN for an example input. Subfigures 4A through 4D show a pattern formation (heart) neural network: 4A shows the image used to construct the dataset; 4B shows input and output encoding for a position (pixel) in the input image. An input is encoded using 2D coordinates: (x1) symmetric horizontal coordinates (starting in the image center) and (x2) vertical coordinates starting from the top left edge of the image. An output, which can be either black or white pixel, is encoded as a 2D vector as shown in the figure. Subfigure 4C shows neural network architecture. Subfigure 4D shows an image learned by the neural network, and the kinetic trajectories of the corresponding CRN for two different input values (positions) corresponding to white and black pixels. [Figure from Vasic, Chalk, Luchsinger, Khurshid, Soloveichik, 2022 PNAS: <a href="https://www.pnas.org/doi/full/10.1073/pnas.2111552119">https://www.pnas.org/doi/full/10.1073/pnas.2111552119</a>]</figcaption>
+</center>
+</figure>
+
 
 I will briefly talk about 4A-D part of the figure above. This example is inspired by the problem of spatial pattern formation, which is still an open challenge for the field of synthetic biology. Spatial pattern formation represents a challenge of forming a desired pattern in a given space. In human development, pattern formation ensures that organs and tissues develop correctly. To mimic a pattern formation problem, we construct a network that based on the position in space (coordinates x1 and x2) produces a different response. Thus, inputs of the neural network are coordinates in the system (x1 and x2). Outputs of the neural network represent the color (black or white). In this way neural network can learn the pattern (image) that is of interest. (in principle, x1 and x2 can be implemented in chemistry via chemical gradient, thus enabling the chemical system to construct pattern in space). For the matter of this article, this network is important because of the following example:
 
-![convergence.png](convergence.png)
+<!-- ![convergence.svg](convergence.svg) -->
+<figure>
+<center>
+<img src="convergence.svg" alt="Trulli" style="width:700px">
+<!-- <figcaption align = "center"></figcaption> -->
+</center>
+</figure>
 
 In the above figure we show convergence (stabilization) times for different inputs of the pattern formation NN (different inputs correspond to different parts of the image). We show the confidence of the neural network in a correct output for the same inputs. What's intriguing is that there is a high correlation between the stabilization time of the chemical network and confidence of the neural network in its output. In other words, when the neural network is less confident about its output prediction, it takes longer for the chemical network to converge. (we don't have a proof that this in general holds, but is an intriguing thought). If such an analogy exists, although not immediately useful, it opens up questions of whether there are other useful analogies. Moreover, whether there are such analogies that certain properties of a neural network are easier to analyze in chemical space.
 
